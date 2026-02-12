@@ -6,27 +6,75 @@
   <title>Motionline Support</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 40px auto; max-width: 760px; line-height: 1.7; padding: 0 16px; color: #1f2937; }
-    h1,h2 { margin-bottom: 8px; }
+    h1,h2,h3 { margin-bottom: 8px; }
     a { color: #0f766e; }
     .note { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 14px; }
+    .step { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin: 10px 0; }
+    .step-number { display: inline-block; background: #0f766e; color: #fff; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; font-size: 13px; font-weight: bold; margin-right: 8px; }
+    .feature-list { list-style: none; padding: 0; }
+    .feature-list li { padding: 6px 0; border-bottom: 1px solid #f1f5f9; }
+    .feature-list li:last-child { border-bottom: none; }
+    .contact-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 13px; }
+    .contact-footer a { color: #9ca3af; }
   </style>
 </head>
 <body>
   <h1>Motionline Support</h1>
-  <p>Motionline のサポート窓口です。</p>
+  <p>スポーツフォーム分析アプリ Motionline のサポートページです。</p>
 
-  <h2>Contact</h2>
-  <p>お問い合わせは以下のメールアドレスへご連絡ください。</p>
-  <p><a href="mailto:trim.hoist.6b@icloud.com">trim.hoist.6b@icloud.com</a></p>
+  <h2>Motionline とは</h2>
+  <p>Motionline は、スポーツの動画をフレームごとに分解し、フォームを分析できるアプリです。人物のセグメンテーション（背景除去）やストロボ写真の作成など、フォーム改善に役立つ機能を備えています。</p>
+
+  <h2>基本的な使い方</h2>
+
+  <div class="step">
+    <p><span class="step-number">1</span><strong>動画を用意する</strong></p>
+    <p>ホーム画面から「カメラで撮影」または「ライブラリから選択」を選んで分析したい動画を読み込みます。</p>
+  </div>
+
+  <div class="step">
+    <p><span class="step-number">2</span><strong>分析の設定をする</strong></p>
+    <p>設定画面で以下の項目を調整できます。</p>
+    <ul>
+      <li><strong>フレーム間隔</strong> — 抽出するフレームの間隔（0.01〜0.5 秒）。小さいほど細かく抽出されます。</li>
+      <li><strong>トリミング</strong> — 動画の開始・終了位置を指定して必要な部分だけ分析できます。</li>
+      <li><strong>画質</strong> — スタンダード（480×854）またはハイクオリティ（720×1280）を選択。</li>
+      <li><strong>人物セグメンテーション</strong> — ON にすると背景を除去し、人物だけを切り出します。背景色も選択可能です。</li>
+      <li><strong>左右反転</strong> — フレームを水平方向に反転して確認できます。</li>
+      <li><strong>類似フレーム自動スキップ</strong> — 変化の少ないフレームを自動で除外します。</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <p><span class="step-number">3</span><strong>フレームを確認・選択する</strong></p>
+    <p>分析が完了すると、フレーム一覧が表示されます。上部に拡大プレビュー、下部にスクロール可能なフレーム一覧が並びます。フレームをタップしてチェックすると、エクスポート対象として選択できます。</p>
+  </div>
+
+  <div class="step">
+    <p><span class="step-number">4</span><strong>エクスポートする</strong></p>
+    <p>チェックしたフレームから以下の形式で書き出せます。</p>
+    <ul>
+      <li><strong>MP4 動画</strong> — 選択したフレームを繋げた動画を作成し、保存・共有できます。</li>
+      <li><strong>ストロボ写真</strong> — 複数フレームを 1 枚の画像にグリッド表示。列数やフレーム番号・タイムスタンプの表示も設定可能です。</li>
+    </ul>
+  </div>
 
   <h2>FAQ</h2>
   <div class="note">
     <p><strong>Q.</strong> 無料トライアル期間はありますか？</p>
-    <p><strong>A.</strong> はい。初回 7 日間の無料トライアルがあります。</p>
+    <p><strong>A.</strong> はい。初回 7 日間の無料トライアルがあります。トライアル中はすべての機能をご利用いただけます。</p>
     <p><strong>Q.</strong> サブスクリプションの管理はどこでできますか？</p>
-    <p><strong>A.</strong> iPhone の設定アプリから Apple ID のサブスクリプション管理画面で変更できます。</p>
+    <p><strong>A.</strong> iPhone の「設定」アプリ → Apple ID → サブスクリプション から変更・解約ができます。</p>
+    <p><strong>Q.</strong> 動画はサーバーにアップロードされますか？</p>
+    <p><strong>A.</strong> いいえ。すべての処理はお使いのデバイス上で完結します。動画や画像が外部に送信されることはありません。</p>
+    <p><strong>Q.</strong> 人物がうまく検出されません。</p>
+    <p><strong>A.</strong> 全身が映っている動画で、背景とのコントラストがはっきりしていると検出精度が上がります。また「ハイクオリティ」設定をお試しください。</p>
   </div>
 
-  <p><a href="./index.html">Back to top</a></p>
+  <p style="margin-top: 24px;"><a href="./index.html">Back to top</a></p>
+
+  <div class="contact-footer">
+    <p>お問い合わせ: <a href="https://github.com/T-aka-H/motionline-pages/issues">Report an issue on GitHub</a></p>
+  </div>
 </body>
 </html>
